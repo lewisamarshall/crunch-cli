@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(pip install:*)",
+      "Read(//c/Users/lewis/AppData/Local/Programs/**)",
+      "Bash(ls /c/Python*)",
+      "Bash(command -v python3.exe)",
+      "Read(//c/Users/lewis/**)",
+      "Read(//c/Users/lewis/miniconda3/bin/**)",
+      "Read(//c/Users/lewis/anaconda3/**)",
+      "Bash(/c/Users/lewis/anaconda3/python.exe -m pip install -e \".[plot,parquet]\" -q)",
+      "Bash(find /c/Users/lewis -name python.exe -not -path */WindowsApps/*)",
+      "Bash(find /c/Users/lewis -name python3*.exe -not -path */WindowsApps/*)",
+      "Bash(gh auth:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\lewis\\Documents\\GitHub"
+    ]
+  }
+}
