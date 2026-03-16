@@ -62,6 +62,12 @@ dmypy.json
 # Ruff
 .ruff_cache/
 
+# Generated chart output
+*.html
+*.png
+*.svg
+*.pdf
+
 # Environment files
 .env
 .env.*
