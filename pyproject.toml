@@ -40,8 +40,8 @@ all     = ["crunch-cli[plot,parquet]"]
 crunch = "crunch.main:app"
 
 [project.urls]
-Homepage = "https://github.com/yourname/crunch-cli"
-Issues   = "https://github.com/yourname/crunch-cli/issues"
+Homepage = "https://github.com/lewisamarshall/crunch-cli"
+Issues   = "https://github.com/lewisamarshall/crunch-cli/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/crunch"]
