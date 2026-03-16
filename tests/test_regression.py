@@ -5,7 +5,7 @@ from __future__ import annotations
 import pytest
 from typer.testing import CliRunner
 
-from crunch.main import app
+from crunch.__main__ import app
 from tests.conftest import df_from_stdout
 
 

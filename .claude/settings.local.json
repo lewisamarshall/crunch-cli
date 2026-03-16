@@ -15,7 +15,21 @@
       "Bash(gh auth:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(gh repo:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(python -m pip --version)",
+      "Bash(where python3:*)",
+      "Bash(python3 -m pip install -e \".[plot,parquet]\")",
+      "Bash(python3 -m pytest tests/ -v)",
+      "Bash(python3 -m pip install pytest hypothesis)",
+      "Bash(python3 -m pytest tests/)",
+      "Bash(python3 -c \"import crunch; print\\(''already installed''\\)\")",
+      "Bash(crunch --help)",
+      "Bash(python3 -m crunch --help)",
+      "Bash(python3 -m pip install -e . -q)",
+      "Bash(python3 -m pytest tests/ -q)"
     ],
     "additionalDirectories": [
       "c:\\Users\\lewis\\Documents\\GitHub"

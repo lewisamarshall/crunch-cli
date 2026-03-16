@@ -37,7 +37,7 @@ parquet = ["pyarrow>=14.0"]
 all     = ["crunch-cli[plot,parquet]"]
 
 [project.scripts]
-crunch = "crunch.main:app"
+crunch = "crunch.__main__:app"
 
 [project.urls]
 Homepage = "https://github.com/lewisamarshall/crunch-cli"
