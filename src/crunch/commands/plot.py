@@ -98,7 +98,7 @@ def _build_altair_chart(
                 y=alt.Y(alt.repeat("row"), type="quantitative"),
                 color=color_enc,
             )
-            .properties(width=width // len(numeric_cols), height=height // len(numeric_cols))
+            .properties(width=max(120, width // len(numeric_cols)), height=max(120, height // len(numeric_cols)))
             .repeat(row=numeric_cols, column=numeric_cols)
         )
         return chart

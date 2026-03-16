@@ -86,7 +86,7 @@ def main(
     output: Annotated[str, typer.Option("--output", "-o", help="Output file or - for stdout")] = "-",
     output_format: Annotated[
         Optional[str],
-        typer.Option("--output-format", "-f", help="Output format: csv, tsv, xlsx, json, md"),
+        typer.Option("--output-format", "-f", help="Output format: csv, tsv, xlsx, json, parquet, md"),
     ] = None,
     anova: Annotated[
         bool,

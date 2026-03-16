@@ -14,7 +14,7 @@ def main(
     input: Annotated[str, typer.Option("--input", "-i", help="Input file or - for stdin")] = "-",
     output_format: Annotated[
         Optional[str],
-        typer.Option("--output-format", "-f", help="Override format inferred from file extension"),
+        typer.Option("--output-format", "-f", help="Output format: csv, tsv, xlsx, json, parquet, md (overrides extension)"),
     ] = None,
 ) -> None:
     """Write stdin (or a file) to a specified output file, converting format as needed.

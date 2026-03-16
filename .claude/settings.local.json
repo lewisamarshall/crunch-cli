@@ -29,10 +29,27 @@
       "Bash(crunch --help)",
       "Bash(python3 -m crunch --help)",
       "Bash(python3 -m pip install -e . -q)",
-      "Bash(python3 -m pytest tests/ -q)"
+      "Bash(python3 -m pytest tests/ -q)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\" -o /c/Users/lewis/Documents/GitHub/crunch-cli/data/penguins.csv)",
+      "Bash(curl -sL \"https://raw.githubusercontent.com/jennybc/gapminder/master/inst/extdata/gapminder.tsv\" -o /c/Users/lewis/Documents/GitHub/crunch-cli/data/gapminder.tsv)",
+      "Bash(curl -sL -k \"https://raw.githubusercontent.com/allisonhorst/palmerpenguins/master/inst/extdata/penguins.csv\" -o /c/Users/lewis/Documents/GitHub/crunch-cli/data/penguins.csv)",
+      "Bash(curl -sL -k \"https://raw.githubusercontent.com/jennybc/gapminder/master/inst/extdata/gapminder.tsv\" -o /c/Users/lewis/Documents/GitHub/crunch-cli/data/gapminder.tsv)",
+      "Bash(wc -l /c/Users/lewis/Documents/GitHub/crunch-cli/data/*.csv /c/Users/lewis/Documents/GitHub/crunch-cli/data/*.tsv)",
+      "Bash(echo $PATH)",
+      "Bash(ls /c/Users/lewis/.pyenv/pyenv-win/versions/3.10.5/Scripts/crunch*)",
+      "Bash(crunch filter:*)",
+      "Bash(crunch pivot:*)",
+      "Bash(crunch plot:*)",
+      "Bash(python3 -c \"import statsmodels\")",
+      "Bash(crunch load:*)",
+      "Bash(crunch lm:*)",
+      "Bash(python3 -m pip install -e \".[plot,parquet,lm]\" -q)",
+      "Bash(python3 -m pytest tests/test_load.py tests/test_write.py tests/test_lm.py tests/test_plot.py -v)"
     ],
     "additionalDirectories": [
-      "c:\\Users\\lewis\\Documents\\GitHub"
+      "c:\\Users\\lewis\\Documents\\GitHub",
+      "C:\\Users\\lewis\\Documents\\GitHub\\crunch-cli\\.claude"
     ]
   }
 }

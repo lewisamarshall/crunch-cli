@@ -80,6 +80,10 @@ def main(
     numpy is available as `np`, pandas as `pd`.
 
     \b
+    Security: --expr is evaluated with Python's eval(). Only pass expressions
+    you trust. Never pipe untrusted user input directly into --expr.
+
+    \b
     Examples:
       crunch transform -i data.csv --column salary --expr "col * 1.1"
       crunch transform -i data.csv --column name --expr "col.str.upper()"

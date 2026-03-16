@@ -13,7 +13,7 @@ def main(
     input: Annotated[str, typer.Argument(help="Input file path (csv, tsv, xlsx, parquet, …)")],
     output_format: Annotated[
         Optional[str],
-        typer.Option("--output-format", "-f", help="Output format: csv, tsv, json, md (default: csv)"),
+        typer.Option("--output-format", "-f", help="Output format: csv, tsv, xlsx, json, parquet, md"),
     ] = None,
 ) -> None:
     """Read a file and write it to stdout, optionally converting format.

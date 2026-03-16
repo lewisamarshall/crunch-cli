@@ -29,11 +29,17 @@ def _apply_melt(
     # Rename conflicting columns that aren't part of the melt before proceeding.
     kept = set(id_vars or []) | set(value_vars or [])
     rename_map = {}
+    existing = set(df.columns)
     for col in df.columns:
         if col in kept:
             continue
         if col == value_name or col == var_name:
-            rename_map[col] = f"__{col}__"
+            # Find a safe temporary name that doesn't collide with any existing column
+            candidate = f"__{col}__"
+            while candidate in existing:
+                candidate = f"_{candidate}_"
+            rename_map[col] = candidate
+            existing.add(candidate)
     if rename_map:
         df = df.rename(columns=rename_map)
 
