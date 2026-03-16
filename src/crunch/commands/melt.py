@@ -25,6 +25,18 @@ def _apply_melt(
             f"Column(s) not found: {missing}. Available: {list(df.columns)}"
         )
 
+    # pandas 2.x raises if value_name/var_name collides with any input column.
+    # Rename conflicting columns that aren't part of the melt before proceeding.
+    kept = set(id_vars or []) | set(value_vars or [])
+    rename_map = {}
+    for col in df.columns:
+        if col in kept:
+            continue
+        if col == value_name or col == var_name:
+            rename_map[col] = f"__{col}__"
+    if rename_map:
+        df = df.rename(columns=rename_map)
+
     return df.melt(
         id_vars=id_vars or None,
         value_vars=value_vars or None,
